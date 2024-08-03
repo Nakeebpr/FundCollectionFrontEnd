@@ -165,7 +165,7 @@ function CustomerList() {
   });
   // validation for amount end
 
-  // confirm add money modal start
+  // confirm add money modal starts here
 
   const handleConfirmAddMoney = async () => {
     console.log("handleConfirmAddMoney");
