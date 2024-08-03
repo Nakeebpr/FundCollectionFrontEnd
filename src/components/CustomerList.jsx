@@ -69,7 +69,7 @@ function CustomerList() {
     setPage(value);
   };
 
-  // for pagination end
+  // for pagination endd
 
   const [customerData, setCustomerData] = useState([]);
   const getCustomerList = async () => {
