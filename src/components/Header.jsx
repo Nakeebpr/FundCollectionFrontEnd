@@ -12,6 +12,8 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import { Link, useNavigate } from "react-router-dom";
+import LogoutIcon from "@mui/icons-material/Logout";
+import { Tooltip } from "@mui/material";
 
 const Header = () => {
   const [open, setOpen] = React.useState(false);
@@ -67,13 +69,18 @@ const Header = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col d-flex justify-content-between align-items-center">
-                <div className="headerLogo d-flex p-2 ">
+                <div
+                  className="headerLogo d-flex p-2 "
+                  onClick={() => navigation("/")}
+                >
                   <img src="/funds_icon.png" alt="logo" className="fundsLogo" />
-                  <div>Fund Collection</div>
+                  <div className="appName">Fund Collection</div>
                 </div>
-                <button className="btn btn-primary" onClick={handleLogOut}>
-                  logout
-                </button>
+                <Tooltip title="Log Out">
+                  <button className="btn btn-primary" onClick={handleLogOut}>
+                    <LogoutIcon />
+                  </button>
+                </Tooltip>
               </div>
             </div>
           </div>
