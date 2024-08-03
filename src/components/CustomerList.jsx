@@ -55,7 +55,7 @@ function CustomerList() {
       setIsSmallScreen(window.innerWidth > 576);
     };
 
-    // Attach the event listener for window resize
+    // Attach the event listener for window resizee
     window.addEventListener("resize", handleResize);
 
     // Cleanup the event listener on component unmount
