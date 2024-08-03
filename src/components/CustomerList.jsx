@@ -64,7 +64,7 @@ function CustomerList() {
     };
   }, []);
 
-  // for pagination start
+  // for pagination startt
   const handleChange = (event, value) => {
     setPage(value);
   };
